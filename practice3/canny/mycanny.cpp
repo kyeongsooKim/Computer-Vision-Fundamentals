@@ -10,6 +10,8 @@ using namespace std;
 void myCanny(const Mat& src, Mat& dst, double threshold1, double threshold2)
 {
 	// 1. Gaussian filter
+	// not necessarily needed, since it might delete some noises but it can blur the edges
+	// at the same time.
 	Mat gauss;
 	GaussianBlur(src, gauss, Size(), 0.5);
 
@@ -52,10 +54,12 @@ void myCanny(const Mat& src, Mat& dst, double threshold1, double threshold2)
 	int ang_array[] = { AREA0, AREA45, AREA45, AREA90, AREA90, AREA135, AREA135, AREA0 };
 	for (int j = 1; j < src.rows - 1; j++) {
 		for (int i = 1; i < src.cols - 1; i++) {
+
 			// 그래디언트 크기가 th_low보다 큰 픽셀에 대해서만 국지적 최대 검사.
 			// 국지적 최대인 픽셀에 대해서만 강한 엣지 또는 약한 엣지로 설정.
 			mag_value = cvRound(mag.at<float>(j, i));
 			if (mag_value > threshold1) {
+
 				// 그래디언트 방향 계산 (4개 구역)
 				int ang_idx = cvRound(ang.at<float>(j, i) / 22.5f);
 				if (ang_idx > 8) ang_idx -= ang_idx;

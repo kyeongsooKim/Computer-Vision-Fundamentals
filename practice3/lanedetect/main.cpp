@@ -29,7 +29,7 @@ int main()
 		int dy = line[3] - line[1];
 		float angle = atan2f(dy, dx) * 180 / CV_PI;
 
-		if (fabs(angle) <= 10)
+		if (fabs(angle) <= 10) //if we delete line 32 and 32, detection of line wouldn't be as correct as expected. 
 			continue;
 
 		if (angle > 0)

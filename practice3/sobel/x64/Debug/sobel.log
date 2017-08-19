@@ -1,3 +1,2 @@
 ﻿  main.cpp
-  sobel.vcxproj -> C:\Users\kkyeo\Desktop\Coding\computer vision-opencv\practice3\sobel\x64\Debug\sobel.exe
-  sobel.vcxproj -> C:\Users\kkyeo\Desktop\Coding\computer vision-opencv\practice3\sobel\x64\Debug\sobel.pdb (Partial PDB)
+LINK : fatal error LNK1168: cannot open C:\Users\kkyeo\Desktop\Coding\computer vision-opencv\practice3\sobel\x64\Debug\sobel.exe for writing
