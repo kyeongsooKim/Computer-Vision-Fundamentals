@@ -1,0 +1,18 @@
+[create vector]
+opencv_createsamples.exe -info info.txt -vec face.vec -num 200 -w 24 -h 24
+
+[view_vector_img]
+opencv_createsamples.exe -vec face.vec -num 200 -w 24 -h 24
+
+[training]
+(1) Fast but not good (about 2min)
+opencv_traincascade.exe -data classifier -vec face.vec -bg bg.txt -numPos 200 -numNeg 200 -numStages 15 -w 24 -h 24
+
+(2) Fast but not bad (about 2min)
+opencv_traincascade.exe -data classifier -vec face.vec -bg bg.txt -numPos 200 -numNeg 200 -numStages 15 -w 24 -h 24 -minHitRate 0.999
+
+(3) Slow but good (about 5min)
+opencv_traincascade.exe -data classifier -vec face.vec -bg bg.txt -numPos 200 -numNeg 200 -numStages 15 -w 24 -h 24 -minHitRate 0.998 -maxFalseAlarmRate 0.4
+
+[visualisation]
+opencv_visualisation --image=sample.png --model=./classifier/cascade.xml --data=./result/

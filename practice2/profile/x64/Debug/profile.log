@@ -1,4 +1,0 @@
-﻿  main.cpp
-c:\users\kkyeo\desktop\coding\computer vision-opencv\practice2\profile\main.cpp(40): warning C4101: 'value': unreferenced local variable
-  profile.vcxproj -> C:\Users\kkyeo\Desktop\Coding\computer vision-opencv\practice2\profile\x64\Debug\profile.exe
-  profile.vcxproj -> C:\Users\kkyeo\Desktop\Coding\computer vision-opencv\practice2\profile\x64\Debug\profile.pdb (Partial PDB)

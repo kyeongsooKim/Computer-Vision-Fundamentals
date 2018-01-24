@@ -1,0 +1,11 @@
+[create vector]
+opencv_createsamples.exe -img binch2.bmp -vec binch.vec -w 25 -h 37
+
+[view_vector_img]
+opencv_createsamples.exe -vec binch.vec -w 25 -h 37
+
+[training]
+opencv_traincascade.exe -data classifier -vec binch.vec -bg neg.txt -numPos 100 -numNeg 200 -numStages 10 -w 25 -h 37 -minHitRate 0.995 -maxFalseAlarmRate 0.3
+
+--> 3분 정도 소요.
+

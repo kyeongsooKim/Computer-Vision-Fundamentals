@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\kkyeo\desktop\coding\computer vision-opencv\practice3\lanedetect\main.cpp(30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\kkyeo\desktop\coding\computer vision-opencv\practice3\lanedetect\main.cpp(30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  lanedetect.vcxproj -> C:\Users\kkyeo\Desktop\Coding\computer vision-opencv\practice3\lanedetect\x64\Debug\lanedetect.exe
+  lanedetect.vcxproj -> C:\Users\kkyeo\Desktop\Coding\computer vision-opencv\practice3\lanedetect\x64\Debug\lanedetect.pdb (Partial PDB)

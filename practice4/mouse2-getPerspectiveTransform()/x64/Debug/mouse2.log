@@ -1,7 +1,0 @@
-﻿  main.cpp
-c:\users\kkyeo\desktop\coding\computer vision-opencv\practice4\mouse2\main.cpp(35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\kkyeo\desktop\coding\computer vision-opencv\practice4\mouse2\main.cpp(48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\kkyeo\desktop\coding\computer vision-opencv\practice4\mouse2\main.cpp(49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\kkyeo\desktop\coding\computer vision-opencv\practice4\mouse2\main.cpp(50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  mouse2.vcxproj -> C:\Users\kkyeo\Desktop\Coding\computer vision-opencv\practice4\mouse2\x64\Debug\mouse2.exe
-  mouse2.vcxproj -> C:\Users\kkyeo\Desktop\Coding\computer vision-opencv\practice4\mouse2\x64\Debug\mouse2.pdb (Partial PDB)
